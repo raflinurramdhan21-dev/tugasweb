@@ -52,7 +52,51 @@
         <a href="https://www.youtube.com/watch?v=uV9koQm__fI">LINK GIVEAWAY</a>
     </div>
     <div class="tombol">
-        <button onclick="alert('bla bla bla ble ble ble blu blu blu')">Skip >></button>
+<button onclick="openModal()">Tonton Video</button>
+
+<!-- Modal -->
+<div id="myModal" style="
+    display:none; 
+    position:fixed; 
+    top:0; left:0; 
+    width:100%; height:100%; 
+    background:rgba(0, 0, 0, 1); 
+    justify-content:center; 
+    align-items:center;">
+  
+  <div style="position:relative; background:#fff; padding:10px; border-radius:10px;">
+    
+    <!-- Tombol Tutup di Tengah Atas -->
+    <button onclick="closeModal()" style="
+        position:absolute;
+        top:10px;
+        left:50%;
+        transform:translateX(-50%);
+        padding:5px 15px;
+        background:#e74c3c;
+        color:white;
+        border:none;
+        border-radius:5px;
+        cursor:pointer;">
+      Tutup
+    </button>
+
+    <!-- Video -->
+    <iframe width="560" height="315" 
+      src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+      frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>
+
+<script>
+function openModal() {
+    document.getElementById("myModal").style.display = "flex";
+}
+function closeModal() {
+    document.getElementById("myModal").style.display = "none";
+}
+</script>
+
     </div>
 
     <div class="footer">
